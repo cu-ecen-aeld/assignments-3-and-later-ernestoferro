@@ -49,11 +49,6 @@ then
 	fi
 fi
 
-# Clean previous build artifacts and compile the writer application natively
-echo "Removing the old writer utility and compiling as a native application"
-make clean
-make
-
 for i in $( seq 1 $NUMFILES)
 do
 	# Use the compiled C binary utility instead of writer.sh
